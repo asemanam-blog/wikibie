@@ -1,0 +1,704 @@
+<!DOCTYPE html>
+<html lang="fa">
+  <head><!--{{{-->
+      <meta charset="UTF-8">
+      <meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+      <!--bayan-tags--><!--{{{-->
+      <head:meta></head:meta>
+      <head:style></head:style>
+      <head:script></head:script>
+      <!--bayan-tags--><!--}}}-->
+      <link href="http://bayanbox.ir/download/5288479852257857761/favicon.ico" rel="shortcut icon">
+  </head><!--}}}-->
+  <body>
+    <div class="container">
+      <div class="row">
+        <!--sidebar--><!--{{{-->
+        <div class="col-lg-2 col-sm-3 col-xs-12 last-mim">
+
+          <div class="wb-sidebar">
+            <!--avatar--><!--{{{-->
+            <check:if blog_image>
+            <div class="bAvatar center">
+              <a href="(*blog_link*)">
+                <img src="(*blog_image*)" alt="(*blog_title*)">
+              </a>
+            </div>
+            </check:if>
+            <!--avatar--><!--}}}-->
+            <!--blog description--><!--{{{-->
+            <check:if blog_description>
+              <div class="blog-desc wb-sidekick">
+                (*blog_description*)
+              </div>
+            </check:if>
+            <!--blog description--><!--}}}-->
+            <!--categories--><!--{{{-->
+            <box:categories>
+            <div class="wb-sidekick">
+              <div class="wb-categories">
+                <h3>
+                  موضوعات
+                </h3>
+                <div>
+                <view:categories>
+                  <a href="(*category_link*)">
+                    (*category_name*)
+                  </a>
+                </view:categories>
+                </div>
+              </div>
+            </div>
+            </box:categories>
+            <!--categories--><!--}}}-->
+            <!--tag cloud--><!--{{{-->
+            <box:tag_cloud>
+            <div class="wb-sidekick">
+              <div class="wb-tag-cloud">
+                <h3>
+                  برچسب‌ها
+                </h3>
+                <view:tag_cloud>
+                <div class="wb-tag-link">
+                  <a href="(*tag_link*)" style="font-size: (*tag_size*)%;">(*tag_name*)</a>
+                </div>
+                </view:tag_cloud>
+              </div>
+            </div>
+            </box:tag_cloud>
+            <!--tag cloud--><!--}}}-->
+            <!--authors--><!--{{{-->
+              <box:authors>
+                <div class="wb-sidekick">
+                  <div class="wb-categories">
+                    <h3>
+                      نویسندگان
+                    </h3>
+                    <div>
+                    <view:authors>
+                      <a href="(*author_link*)">
+                        (*author_name*)
+                      </a>
+                    </view:authors>
+                    </div>
+                  </div>
+                </div>
+              </box:authors>
+            <!--authors--><!--}}}-->
+            <!--recent posts--><!--{{{-->
+            <check:if not index_page1_selected>
+              <box:recent_posts max="5">
+                <div class="wb-sidekick">
+                  <div class="wb-categories">
+                    <h3>
+                      آخرین مطالب
+                    </h3>
+                    <div>
+                    <view:recent_posts>
+                      <a href="(*post_link*)" alt="(*post_title*)">
+                        (*post_title*)
+                      </a>
+                    </view:recent_posts>
+                    </div>
+                  </div>
+                </div>
+              </box:recent_posts>
+            </check:if>
+            <!--recent posts--><!--}}}-->
+            <!--popular posts--><!--{{{-->
+              <box:popular_posts max="5">
+                <div class="wb-sidekick">
+                  <div class="wb-categories">
+                    <h3>
+                      محبوب‌ترین مطالب
+                    </h3>
+                    <div>
+                    <view:popular_posts>
+                      <a href="(*post_link*)" alt="(*post_title*)">
+                        (*post_title*)
+                      </a>
+                    </view:popular_posts>
+                    </div>
+                  </div>
+                </div>
+              </box:popular_posts>
+            <!--popular posts--><!--}}}-->
+            <!--most visited posts--><!--{{{-->
+              <box:most_visited_posts max="5">
+                <div class="wb-sidekick">
+                  <div class="wb-categories">
+                    <h3>
+                      مطالب پربازدید
+                    </h3>
+                    <div>
+                    <view:most_visited_posts>
+                      <a href="(*post_link*)" alt="(*post_title*)">
+                        (*post_title*)
+                      </a>
+                    </view:most_visited_posts>
+                    </div>
+                  </div>
+                </div>
+              </box:most_visited_posts>
+            <!--most_visited posts--><!--}}}-->
+            <!--archive--><!--{{{-->
+              <box:archive>
+                <div class="wb-sidekick">
+                  <div class="wb-categories">
+                    <h3>
+                      آرشیو
+                    </h3>
+                    <div>
+                    <view:archive>
+                      <a href="(*link_url*)">
+                        (*link_name*)
+                      </a>
+                    </view:archive>
+                    </div>
+                  </div>
+                </div>
+              </box:archive>
+            <!--archive--><!--}}}-->
+            <!--daily links--><!--{{{-->
+              <box:daily_links>
+                <div class="wb-sidekick">
+                  <div class="wb-categories">
+                    <h3>
+                      پیوندهای روزانه
+                    </h3>
+                    <div>
+                    <view:daily_links>
+                      <a href="(*link_url*)" alt="(*link_alt*)">
+                        (*link_name*)
+                      </a>
+                    </view:daily_links>
+                    </div>
+                  </div>
+                </div>
+              </box:daily_links>
+            <!--links--><!--}}}-->
+            <!--links--><!--{{{-->
+              <box:links>
+                <div class="wb-sidekick">
+                  <div class="wb-categories">
+                    <h3>
+                      پیوندها
+                    </h3>
+                    <div>
+                    <view:links>
+                      <a href="(*link_url*)" alt="(*link_alt*)">
+                        (*link_name*)
+                      </a>
+                    </view:links>
+                    </div>
+                  </div>
+                </div>
+              </box:links>
+            <!--links--><!--}}}-->
+            <!--stats--><!--{{{-->
+            <box:stat>
+              <div class="wb-sidekick">
+                <div class="wb-stats">
+                  <h3>
+                    آمار
+                  </h3>
+                  <view:stat>
+                  <div class="wb-stats-each">
+                    <div class="wb-stat-name">
+                      (*stat_title*)
+                    </div>
+                    <div class="wb-stat-value">
+                      (*stat_value*)
+                    </div>
+                    <div class="wb-clear"></div>
+                  </div>
+                  </view:stat>
+                </div>
+              </div>
+            </box:stat>
+            <!--stats--><!--}}}-->
+            <!--ads--><!--{{{-->
+            <box:ads>
+            <div class="wb-sidekick">
+              <div class="wb-ads">
+                  <h3>
+                    تبلیغات
+                  </h3>
+                <view:ads>
+                <div class="wb-ad-item">
+                  (*ad*)
+                </div>
+                </view:ads>
+              </div>
+            </div>
+            </box:ads>
+            <!--ads--><!--}}}-->
+          </div>
+
+        </div>
+        <!--daily sidebar--><!--}}}-->
+        <!--mainbar--><!--{{{-->
+        <div class="col-lg-10 col-sm-9 col-xs-12">
+        <!--messages--><!--{{{-->
+        <box:messages>
+          <view:messages>
+            <div class="wb-system-messages (*message_type*)">
+              <div class="wb-system-messages-item center">
+                (*message*)
+              </div>
+            </div>
+          </view:messages>
+        </box:messages>
+        <!--messages--><!--}}}-->
+          <div class="wb-main">
+            <!--header--><!--{{{-->
+            <div class="wb-head">
+              <!--title--><!--{{{-->
+              <a href="(*blog_link*)">
+                <div class="bTitle center">
+                  (*blog_title*)
+                </div>
+              </a>
+              <!--title--><!--}}}-->
+              <!--slogan--><!--{{{-->
+              <check:if blog_short_description>
+                <span class="wb-slogan center d-block">
+                  (*blog_short_description*)
+                </span>
+              </check:if>
+              <!--slogan--><!--}}}-->
+              <!--menu pages--><!--{{{-->
+                <div class="wb-top-menu-wrap row">
+                <box:menu>
+                  <ul class="wb-top-menu col-lg-9 col-xs-12 last-mim last-mimm">
+                    <view:menu>
+                    <li class="(*menu_item_selected*)">
+                      <a href="(*menu_item_link*)">(*menu_item_title*)</a>
+                    </li>
+                    </view:menu>
+                  </ul>
+                  <div style="clear: both;"></div>
+                </box:menu>
+                <!--search--><!--{{{-->
+                <check:if search_form>
+                  <div class="wb-search-form col-lg-3 col-xs-12">
+                    (*search_form*)
+                  </div>
+                </check:if>
+                <!--search--><!--}}}-->
+                </div>
+              <!--menu pages--><!--}}}-->
+            </div>
+            <!--header--><!--}}}-->
+            <!--content--><!--{{{-->
+            <div class="wb-content">
+              <!--post list--><!--{{{-->
+              <box:post_list>
+              <div class="wb-post-list">
+                <view:post_list>
+                  <div class="wb-post-list-item">
+                    <!--title--><!--{{{-->
+                    <div class="wb-post-list-title">
+                      <div class="wp-post-list-catalist">
+                        <span class="tIcon">
+                          <img src="https://s17.picofile.com/file/8423077450/article_icon.png" alt="مقاله">
+                        </span>
+                        <a href="(*post_link*)">
+                          <h2>
+                            (*post_title*)
+                          </h2>
+                        </a>
+                      </div>
+                    </div>
+                    <!--title--><!--}}}-->
+                    <!--detail--><!--{{{-->
+                    <div class="wb-post-list-detail">
+                      <div class="wb-post-list-author">
+                        <img src="https://bayanbox.ir/download/2089400947142887402/user.svg" alt="author">
+                        <span>
+                          (*post_author*)
+                        </span>
+                      </div>
+                      <div class="wb-post-list-date">
+                        <img src="https://bayanbox.ir/download/1249587433114230328/date.svg" alt="date">
+                        <span>
+                          (*post_date format="%e %B %y"*)
+                        </span>
+                      </div>
+                    </div>
+                    <!--detail--><!--}}}-->
+                    <!--summary--><!--{{{-->
+                    <div class="wb-post-summary">
+                      (*post_summary*)
+                    </div>
+                    <!--summary--><!--}}}-->
+                    <!--continue--><!--{{{-->
+                    <div class="wb-continue-section">
+                      <check:if post_has_read_more>
+                        <a class="wb-continue" href="(*post_link*)">
+                          ادامه...
+                        </a>
+                      </check:if>
+                        <a href="(*post_link*)#comments" style="padding-top: 11px;float: left;margin-right: 15px;margin-left: 10px;">
+                          <img src="https://bayanbox.ir/download/360656855307319660/commentory.svg" alt="comments">
+                          (*post_comment_count*)
+                        </a>
+                      <!--like-buttons--><!--{{{-->
+                      <div class="wb-rating" style="padding-top: 11px;">
+                        <box:post_rating>
+                            <span class="rate-box (*user_rated*)">
+                              <span class="rate-button-box rate-up (*user_rated_up*)">
+                                <a class="rate-button" href="(*rate_up_link*)" rel="nofollow" title="like">
+                                  (*up_rates*)
+                                  <img src="https://bayanbox.ir/download/641735932238592043/upvotey.svg" alt="upvote">
+                                </a>
+                              </span>
+                              <span class="rate-button-box mx-2 rate-down (*user_rated_down*)">
+                                <a class="rate-button" href="(*rate_down_link*)" rel="nofollow" title="dislike">
+                                  (*down_rates*)
+                                  <img src="https://bayanbox.ir/download/8236847101465908407/downvotey.svg" alt="downvote">
+                                </a>
+                              </span>
+                            </span>
+                          </box:post_rating>
+                      </div>
+                      <!--like-buttons--><!--}}}-->
+                      <div class="wb-clear"></div>
+                    </div>
+                    <!--continue--><!--}}}-->
+                  </div>
+                </view:post_list>
+              </div>
+              </box:post_list>
+              <!--post list--><!--}}}-->
+              <!--post detail--><!--{{{-->
+              <box:post_detail>
+                <div class="wb-post-detail">
+              <!--title--><!--{{{-->
+                  <h1>
+                    (*post_title*)
+                  </h1>
+              <!--title--><!--}}}-->
+                    <!--detail--><!--{{{-->
+                    <div class="wb-post-list-detail">
+                      <div class="wb-post-list-author">
+                        <img src="https://bayanbox.ir/download/2089400947142887402/user.svg" alt="author">
+                        <span>
+                          (*post_author*)
+                        </span>
+                      </div>
+                      <div class="wb-post-list-date">
+                        <img src="https://bayanbox.ir/download/1249587433114230328/date.svg" alt="date">
+                        <span>
+                          (*post_date format="%e %B %y"*)
+                        </span>
+                      </div>
+                      <div class="wb-post-list-date">
+                        <img src="https://bayanbox.ir/download/360656855307319660/commentory.svg" alt="date">
+                        <span>
+                          <a href="(*post_link*)#comments">
+                            (*post_comment_count*) نظر
+                          </a>
+                        </span>
+                      </div>
+                    </div>
+                    <!--detail--><!--}}}-->
+                    <!--full post--><!--{{{-->
+                    <div class="wb-full-post">
+                      (*post_full_content*)
+                    </div>
+                    <!--full post--><!--}}}-->
+                    <!--tags--><!--{{{-->
+                    <box:post_tags>
+                    <div class="wb-tags">
+                      <span>
+                        برچسب‌ها
+                      </span>
+                      <view:post_tags>
+                      <div class="wb-tag-item">
+                        <a href="(*tag_link*)">(*tag_name*)</a>
+                      </div>
+                      </view:post_tags>
+                    </div>
+                    </box:post_tags>
+                    <!--tags--><!--}}}-->
+                    <!--share and like--><!--{{{-->
+                    <div class="wb-full-post-sep">
+                    <div class="wb-continue-sectioner">
+                        <div class="wb-continue" style="margin-top: .5em;margin-bottom: .3em;">
+                            <!--social-sharing--><!--{{{-->
+                                <a target="_blank" href="https://twitter.com/intent/tweet?url=http://asemanam.blog.ir(*post_link*)&amp;status=(*post_title*)+http://asemanam.blog.ir(*post_link*)">
+                                  <div class="label mx-1" style="width: 30px; background: none;">
+                                    <svg role="img" viewBox="0 0 24 24"><title>Twitter</title><path style="fill: rgba(153, 156, 162, 1)" d="M23.954 4.569c-.885.389-1.83.654-2.825.775 1.014-.611 1.794-1.574 2.163-2.723-.951.555-2.005.959-3.127 1.184-.896-.959-2.173-1.559-3.591-1.559-2.717 0-4.92 2.203-4.92 4.917 0 .39.045.765.127 1.124C7.691 8.094 4.066 6.13 1.64 3.161c-.427.722-.666 1.561-.666 2.475 0 1.71.87 3.213 2.188 4.096-.807-.026-1.566-.248-2.228-.616v.061c0 2.385 1.693 4.374 3.946 4.827-.413.111-.849.171-1.296.171-.314 0-.615-.03-.916-.086.631 1.953 2.445 3.377 4.604 3.417-1.68 1.319-3.809 2.105-6.102 2.105-.39 0-.779-.023-1.17-.067 2.189 1.394 4.768 2.209 7.557 2.209 9.054 0 13.999-7.496 13.999-13.986 0-.209 0-.42-.015-.63.961-.689 1.8-1.56 2.46-2.548l-.047-.02z"></path></svg>
+                                  </div>
+                                </a>
+                                <a target="_blank" href="https://www.addtoany.com/add_to/whatsapp?linkurl=http://asemanam.blog.ir(*post_link*)&amp;linkname=(*post_title*)">
+                                  <div class="label mx-1" style="width: 30px; background: none;">
+                                    <svg role="img" viewBox="0 0 24 24"><title>WhatsApp</title><path style="fill: rgba(153, 156, 162, 1)" d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413Z"></path></svg>
+                                  </div>
+                                </a>
+                                <a target="_blank" href="https://www.addtoany.com/add_to/telegram?linkurl=http://asemanam.blog.ir(*post_link*)&amp;linkname=(*post_title*)">
+                                  <div class="label mx-1" style="width: 30px; background: none;">
+                                    <svg role="img" viewBox="0 0 24 24"><title>Telegram</title><path style="fill: rgba(153, 156, 162, 1)" d="M23.91 3.79L20.3 20.84c-.25 1.21-.98 1.5-2 .94l-5.5-4.07-2.66 2.57c-.3.3-.55.56-1.1.56-.72 0-.6-.27-.84-.95L6.3 13.7l-5.45-1.7c-1.18-.35-1.19-1.16.26-1.75l21.26-8.2c.97-.43 1.9.24 1.53 1.73z"></path></svg>
+                                  </div>
+                                </a>
+                                <a target="_blank" href="mailto:?subject=(*post_title*)&amp;body=سلام یه نگاهی به این بنداز<br>http://asemanam.blog.ir(*post_link*)">
+                                  <div class="label mx-1" style="width: 30px; background: none;">
+                                    <svg role="img" viewBox="0 0 24 24"><title>Gmail</title><path style="fill: rgba(153, 156, 162, 1)" d="M24 4.5v15c0 .85-.65 1.5-1.5 1.5H21V7.387l-9 6.463-9-6.463V21H1.5C.649 21 0 20.35 0 19.5v-15c0-.425.162-.8.431-1.068C.7 3.16 1.076 3 1.5 3H2l10 7.25L22 3h.5c.425 0 .8.162 1.069.432.27.268.431.643.431 1.068z"></path></svg>
+
+                                  </div>
+                                </a>
+                            <!--social-sharing--><!--}}}-->
+                        </div>
+                      <!--like-buttons--><!--{{{-->
+                      <div class="wb-rating" style="padding-top: 10px;">
+                        <box:post_rating>
+                            <span class="rate-box (*user_rated*)">
+                              <span class="rate-button-box rate-up (*user_rated_up*)">
+                                <a class="rate-button" href="(*rate_up_link*)" rel="nofollow" title="like">
+                                  (*up_rates*)
+                                  <img src="https://bayanbox.ir/download/641735932238592043/upvotey.svg" alt="upvote">
+                                </a>
+                              </span>
+                              <span class="rate-button-box mx-2 rate-down (*user_rated_down*)">
+                                <a class="rate-button" href="(*rate_down_link*)" rel="nofollow" title="dislike">
+                                  (*down_rates*)
+                                  <img src="https://bayanbox.ir/download/8236847101465908407/downvotey.svg" alt="downvote">
+                                </a>
+                              </span>
+                            </span>
+                          </box:post_rating>
+                      </div>
+                      <!--like-buttons--><!--}}}-->
+                      <div class="wb-clear"></div>
+                    </div>
+                    </div>
+                    <!--share and like--><!--}}}-->
+                    <!--comment-post--><!--{{{-->
+                    <box:post_comments>
+                    <a name="comments"></a>
+                    <div class="wb-comment-section-all">
+                      <view:post_comments>
+                      <a name="comment-(*comment_id*)"></a>
+                      <div class="wb-comment-section">
+                        <!--first row--><!--{{{-->
+                        <div class="wb-comm-first-col">
+                          <img src="(*comment_avatar*)" alt="(*comment_fullname*)">
+                          <check:if comment_website >
+                          <a href="(*comment_website*)">
+                            (*comment_fullname*)
+                          </a>
+                          </check:if>
+                          <check:if not comment_website >
+                          <span>
+                            (*comment_fullname*)
+                          </span>
+                          </check:if>
+                        </div>
+                        <!--first row--><!--}}}-->
+                        <!--second row--><!--{{{-->
+                        <div class="wb-comm-second-col">
+                          (*comment_body*)
+                        </div>
+                        <!--second row--><!--}}}-->
+                        <!--third row--><!--{{{-->
+                        <div class="wb-comm-third-col">
+                          <img src="https://bayanbox.ir/download/1249587433114230328/date.svg" alt="date">
+                          <span>
+                            (*comment_date format="%e %B %y"*)
+                          </span>
+                        </div>
+                        <!--third row--><!--}}}-->
+                        <!--fourth row--><!--{{{-->
+                        <check:if comment_reply >
+                        <div class="wb-fourth-col">
+                          <div class="wb-comm-reply-sep"></div>
+                          <div class="wb-comm-reply-name">
+                            پاسخ (*comment_reply_fullname*)
+                          </div>
+                          <div class="wb-comm-reply-text">
+                            (*comment_reply_text*)
+                          </div>
+                        </div>
+                        </check:if>
+                        <!--fourth row--><!--}}}-->
+                      </div>
+                      </view:post_comments>
+                        <!--add-comment--><!--{{{-->
+                        <check:if post_has_send_comment>
+                        <a name="send_comment"></a>
+                          <div class="wb-comment-add">
+                            (*comment_add_form*)
+                          </div>
+                        </check:if>
+                        <!--add-comment--><!--}}}-->
+                    </div>
+                    </box:post_comments>
+                    <!--comment-post--><!--}}}-->
+                </div>
+              </box:post_detail>
+              <!--post detail--><!--}}}-->
+              <!--page--><!--{{{-->
+              <box:page_detail>
+                <div class="wb-page-detail">
+              <!--title--><!--{{{-->
+                  <h1>
+                    (*page_title*)
+                  </h1>
+              <!--title--><!--}}}-->
+                    <!--full page--><!--{{{-->
+                    <div class="wb-full-page">
+                      (*page_content*)
+                    </div>
+                    <!--full page--><!--}}}-->
+                    <!--share and like--><!--{{{-->
+                    <div class="wb-full-post-sep">
+                    <div class="wb-continue-sectioner">
+                        <div class="wb-continue" style="margin-top: .5em;margin-bottom: .3em;">
+                            <!--social-sharing--><!--{{{-->
+                                <a target="_blank" href="https://twitter.com/intent/tweet?url=http://asemanam.blog.ir(*page_link*)&amp;status=(*page_title*)+http://asemanam.blog.ir(*page_link*)">
+                                  <div class="label mx-1" style="width: 30px; background: none;">
+                                    <svg role="img" viewBox="0 0 24 24"><title>Twitter</title><path style="fill: rgba(153, 156, 162, 1)" d="M23.954 4.569c-.885.389-1.83.654-2.825.775 1.014-.611 1.794-1.574 2.163-2.723-.951.555-2.005.959-3.127 1.184-.896-.959-2.173-1.559-3.591-1.559-2.717 0-4.92 2.203-4.92 4.917 0 .39.045.765.127 1.124C7.691 8.094 4.066 6.13 1.64 3.161c-.427.722-.666 1.561-.666 2.475 0 1.71.87 3.213 2.188 4.096-.807-.026-1.566-.248-2.228-.616v.061c0 2.385 1.693 4.374 3.946 4.827-.413.111-.849.171-1.296.171-.314 0-.615-.03-.916-.086.631 1.953 2.445 3.377 4.604 3.417-1.68 1.319-3.809 2.105-6.102 2.105-.39 0-.779-.023-1.17-.067 2.189 1.394 4.768 2.209 7.557 2.209 9.054 0 13.999-7.496 13.999-13.986 0-.209 0-.42-.015-.63.961-.689 1.8-1.56 2.46-2.548l-.047-.02z"></path></svg>
+                                  </div>
+                                </a>
+                                <a target="_blank" href="https://www.addtoany.com/add_to/whatsapp?linkurl=http://asemanam.blog.ir(*page_link*)&amp;linkname=(*page_title*)">
+                                  <div class="label mx-1" style="width: 30px; background: none;">
+                                    <svg role="img" viewBox="0 0 24 24"><title>WhatsApp</title><path style="fill: rgba(153, 156, 162, 1)" d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413Z"></path></svg>
+                                  </div>
+                                </a>
+                                <a target="_blank" href="https://www.addtoany.com/add_to/telegram?linkurl=http://asemanam.blog.ir(*page_link*)&amp;linkname=(*page_title*)">
+                                  <div class="label mx-1" style="width: 30px; background: none;">
+                                    <svg role="img" viewBox="0 0 24 24"><title>Telegram</title><path style="fill: rgba(153, 156, 162, 1)" d="M23.91 3.79L20.3 20.84c-.25 1.21-.98 1.5-2 .94l-5.5-4.07-2.66 2.57c-.3.3-.55.56-1.1.56-.72 0-.6-.27-.84-.95L6.3 13.7l-5.45-1.7c-1.18-.35-1.19-1.16.26-1.75l21.26-8.2c.97-.43 1.9.24 1.53 1.73z"></path></svg>
+                                  </div>
+                                </a>
+                                <a target="_blank" href="mailto:?subject=(*page_title*)&amp;body=سلام یه نگاهی به این بنداز<br>http://asemanam.blog.ir(*page_link*)">
+                                  <div class="label mx-1" style="width: 30px; background: none;">
+                                    <svg role="img" viewBox="0 0 24 24"><title>Gmail</title><path style="fill: rgba(153, 156, 162, 1)" d="M24 4.5v15c0 .85-.65 1.5-1.5 1.5H21V7.387l-9 6.463-9-6.463V21H1.5C.649 21 0 20.35 0 19.5v-15c0-.425.162-.8.431-1.068C.7 3.16 1.076 3 1.5 3H2l10 7.25L22 3h.5c.425 0 .8.162 1.069.432.27.268.431.643.431 1.068z"></path></svg>
+
+                                  </div>
+                                </a>
+                            <!--social-sharing--><!--}}}-->
+                        </div>
+                      <div class="wb-clear"></div>
+                    </div>
+                    </div>
+                    <!--share and like--><!--}}}-->
+                </div>
+                <!--comment-page--><!--{{{-->
+                <box:page_comments>
+                <a name="comments"></a>
+                <div class="wb-comment-section-all">
+                  <view:page_comments>
+                  <a name="comment-(*comment_id*)"></a>
+                  <div class="wb-comment-section">
+                    <!--first row--><!--{{{-->
+                    <div class="wb-comm-first-col">
+                      <img src="(*comment_avatar*)" alt="(*comment_fullname*)">
+                      <check:if comment_website >
+                      <a href="(*comment_website*)">
+                        (*comment_fullname*)
+                      </a>
+                      </check:if>
+                      <check:if not comment_website >
+                      <span>
+                        (*comment_fullname*)
+                      </span>
+                      </check:if>
+                    </div>
+                    <!--first row--><!--}}}-->
+                    <!--second row--><!--{{{-->
+                    <div class="wb-comm-second-col">
+                      (*comment_body*)
+                    </div>
+                    <!--second row--><!--}}}-->
+                    <!--third row--><!--{{{-->
+                    <div class="wb-comm-third-col">
+                      <img src="https://bayanbox.ir/download/1249587433114230328/date.svg" alt="date">
+                      <span>
+                        (*comment_date format="%e %B %y"*)
+                      </span>
+                    </div>
+                    <!--third row--><!--}}}-->
+                    <!--fourth row--><!--{{{-->
+                    <check:if comment_reply >
+                    <div class="wb-fourth-col">
+                      <div class="wb-comm-reply-sep"></div>
+                      <div class="wb-comm-reply-name">
+                        پاسخ (*comment_reply_fullname*)
+                      </div>
+                      <div class="wb-comm-reply-text">
+                        (*comment_reply_text*)
+                      </div>
+                    </div>
+                    </check:if>
+                    <!--fourth row--><!--}}}-->
+                  </div>
+                  </view:page_comments>
+                    <!--add-comment--><!--{{{-->
+                    <check:if page_has_send_comment>
+                    <a name="send_comment"></a>
+                      <div class="wb-comment-add">
+                        (*comment_add_form*)
+                      </div>
+                    </check:if>
+                    <!--add-comment--><!--}}}-->
+                </div>
+                </box:page_comments>
+                <!--comment-page--><!--}}}-->
+              </box:page_detail>
+              <!--page--><!--}}}-->
+
+          <!--pagination--><!--{{{-->
+            <box:pagination>
+              <div class="wb-pagination">
+                <check:if page_prev>
+                  <a href="(*page_prev*)" class="wb-new">مطالب جدیدتر</a>
+                </check:if>
+                <check:if page_next>
+                  <a href="(*page_next*)" class="wb-old">مطالب قدیمی‌تر</a>
+                </check:if>
+                <div class="clear"></div>
+              </div>
+            </box:pagination>
+          <!--pagination--><!--}}}-->
+            </div>
+            <!--content--><!--}}}-->
+          </div>
+        </div>
+        <!--mainbar--><!--}}}-->
+        <!--footer--><!--{{{-->
+        <footer class="wb-footer last-mim container-fluid">
+          <!--bayan sign--><!--{{{-->
+          <div class="wb-bayan">
+            <span>
+<svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" style="fill:rgba(153, 156, 162, 1);transform:;-ms-filter:"><path d="M18.404,2.998c-0.757-0.754-2.077-0.751-2.828,0.005l-1.784,1.791L11.586,7H7C6.579,7,6.204,7.263,6.061,7.658l-4,11 c-0.133,0.365-0.042,0.774,0.232,1.049l2,2C4.483,21.898,4.739,22,5,22c0.114,0,0.23-0.02,0.342-0.061l11-4 C16.737,17.796,17,17.421,17,17v-4.586l2.207-2.207c0,0,0,0,0-0.001c0.001,0,0.001,0,0.001,0L21,8.409 c0.378-0.378,0.586-0.881,0.585-1.415c0-0.535-0.209-1.038-0.588-1.415L18.404,2.998z M15.293,11.293 C15.105,11.48,15,11.734,15,12v4.3l-9.249,3.363l4.671-4.671C10.448,14.993,10.474,15,10.5,15c0.828,0,1.5-0.672,1.5-1.5 S11.328,12,10.5,12S9,12.672,9,13.5c0,0.026,0.007,0.052,0.008,0.078l-4.671,4.671L7.7,9H12c0.266,0,0.52-0.105,0.707-0.293 L14.5,6.914L17.086,9.5L15.293,11.293z M18.499,8.085l-2.586-2.586l1.079-1.084l2.593,2.581L18.499,8.085z"></path></svg>
+
+            قدرت گرفته از
+            <a href="https://blog.ir" target="_blank"> بلاگ</a>
+            <a href="https://bayan.ir" target="_blank"> بیان</a>
+            </span>
+          </div>
+          <!--bayan sign--><!--}}}-->
+          <!--mimr sign--><!--{{{-->
+          <div class="wb-mimr">
+<svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" style="fill:rgba(153, 156, 162, 1);transform:;-ms-filter:"><path d="M18.944,11.112C18.507,7.67,15.56,5,12,5C9.244,5,6.85,6.611,5.757,9.15C3.609,9.792,2,11.82,2,14c0,2.757,2.243,5,5,5h11 c2.206,0,4-1.794,4-4C22,13.12,20.695,11.538,18.944,11.112z M18,17H7c-1.654,0-3-1.346-3-3c0-1.404,1.199-2.756,2.673-3.015 l0.581-0.102l0.192-0.558C8.149,8.274,9.895,7,12,7c2.757,0,5,2.243,5,5v1h1c1.103,0,2,0.897,2,2S19.103,17,18,17z"></path></svg>
+
+            طراحی قالب از
+            <a href="http://asemanam.blog.ir">
+              محمدرضا...
+            </a>
+          </div>
+          <!--mimr sign--><!--}}}-->
+          <!--copyright--><!--{{{-->
+            <div class="wb-copyright">
+<svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" style="fill:rgba(153, 156, 162, 1);transform:;-ms-filter:"><path d="M12,22c5.421,0,10-4.579,10-10S17.421,2,12,2S2,6.579,2,12S6.579,22,12,22z M12,4c4.337,0,8,3.663,8,8s-3.663,8-8,8 s-8-3.663-8-8S7.663,4,12,4z"></path><path d="M12,17c0.901,0,2.581-0.168,3.707-1.292l-1.414-1.416C13.85,14.735,12.992,15,12,15c-1.626,0-3-1.374-3-3s1.374-3,3-3 c0.993,0,1.851,0.265,2.293,0.707l1.414-1.414C14.582,7.168,12.901,7,12,7c-2.757,0-5,2.243-5,5S9.243,17,12,17z"></path></svg>
+
+              برای یادگیری کپی نکنید، تمرین کنید!
+            </div>
+          <!--copyright--><!--}}}-->
+        </footer>
+        <!--footer--><!--}}}-->
+      </div>
+    </div>
+  </body>
+</html>
