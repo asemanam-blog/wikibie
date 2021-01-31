@@ -740,6 +740,12 @@ div.wb-category-children {
     margin-right: 15px;
 }
 
+#followersLs {
+    width: 160px;
+    margin-right: auto;
+    margin-left: auto;
+}
+
 /* TYPOGRAPHY */
 
 h1 {
