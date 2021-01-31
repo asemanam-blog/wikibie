@@ -45,6 +45,15 @@
                   <a href="(*category_link*)">
                     (*category_name*)
                   </a>
+                  <check:if category_children>
+                    <div class="wb-category-children">
+                      <view:category_children>
+                        <a href="(*category_link*)">
+                          (*category_name*)
+                        </a>
+                      </view:category_children>
+                    </div>
+                  </check:if>
                 </view:categories>
                 </div>
               </div>

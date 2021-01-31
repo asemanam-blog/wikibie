@@ -736,6 +736,10 @@ li {
   top: 5px;
 }
 
+div.wb-category-children {
+    margin-right: 15px;
+}
+
 /* TYPOGRAPHY */
 
 h1 {
