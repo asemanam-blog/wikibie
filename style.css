@@ -750,7 +750,7 @@ div.wb-category-children {
     margin-bottom: 30px;
 }
 
-.wb-full-page {
+.wb-full-page, .wb-full-post {
     text-align: justify;
 }
 
