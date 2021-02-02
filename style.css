@@ -750,6 +750,10 @@ div.wb-category-children {
     margin-bottom: 30px;
 }
 
+.wb-full-page {
+    text-align: justify;
+}
+
 /* TYPOGRAPHY */
 
 h1 {
